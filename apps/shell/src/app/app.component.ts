@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { DemoComponent } from '@nx-ng-native-federation/shared';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [DemoComponent, MatChipsModule],
   selector: 'nx-ng-native-federation-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'shell';
-}
+export class AppComponent {}
